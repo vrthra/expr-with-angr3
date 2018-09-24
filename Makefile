@@ -15,3 +15,6 @@ lib/libantlr3c-3.4.a:
 
 clean:
 	rm -rf build-antlr output/ lib/libantlr3c-3.4/
+
+test:
+	./expr 1+1
