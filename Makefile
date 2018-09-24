@@ -1,6 +1,6 @@
 all: lib/libantlr3c-3.4.a | output
 	java -cp ./lib/antlr-3.4-complete.jar org.antlr.Tool -o output Expr.g
-	gcc -o expr output/*.c  -I lib/include/ lib/libantlr3c.a
+	gcc -g -o expr output/*.c  -I lib/include/ lib/libantlr3c.a
 
 output:
 	mkdir -p output
